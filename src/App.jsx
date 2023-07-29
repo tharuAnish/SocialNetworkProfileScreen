@@ -1,9 +1,10 @@
 import "./App.css"
+import Profile from "./pages/profile/profile"
 
 export default function App() {
   return (
     <>
-      <h1>APP</h1>
+      <Profile />
     </>
   )
 }
