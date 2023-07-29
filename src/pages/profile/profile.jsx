@@ -2,6 +2,8 @@ import React from "react"
 import { useFetch } from "../../hooks/useFetch"
 import ProfileHeader from "../../components/profile_header/profile_header"
 import Experience from "../../components/experience/experience"
+import Education from "../../components/education/education"
+import Skills from "../../components/skills/skills"
 
 export default function Profile() {
   const {
@@ -17,9 +19,11 @@ export default function Profile() {
       {profileData && (
         <div className="container mx-auto p-4">
           <ProfileHeader profileData={profileData} />
+          <Skills profileData={profileData} />
           <div className="container mx-auto py-8">
             <Experience profileData={profileData} />
           </div>
+          <Education profileData={profileData} />
         </div>
       )}
     </div>
