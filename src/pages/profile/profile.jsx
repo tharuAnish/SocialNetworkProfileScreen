@@ -4,6 +4,9 @@ import ProfileHeader from "../../components/profile_header/profile_header"
 import Experience from "../../components/experience/experience"
 import Education from "../../components/education/education"
 import Skills from "../../components/skills/skills"
+import Recommendations from "../../components/recommendations/recommendations"
+import Posts from "../../components/posts/posts"
+import CertificationCard from "../../components/certifications/certifications"
 
 export default function Profile() {
   const {
@@ -20,10 +23,13 @@ export default function Profile() {
         <div className="container mx-auto p-4">
           <ProfileHeader profileData={profileData} />
           <Skills profileData={profileData} />
-          <div className="container mx-auto py-8">
+          <div className="container mx-auto py-6">
             <Experience profileData={profileData} />
           </div>
           <Education profileData={profileData} />
+          <Recommendations profileData={profileData} />
+          <Posts profileData={profileData} />
+          <CertificationCard profileData={profileData} />
         </div>
       )}
     </div>

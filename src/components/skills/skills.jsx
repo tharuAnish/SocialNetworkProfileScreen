@@ -10,7 +10,7 @@ const Skills = ({ profileData }) => {
   }
 
   return (
-    <div className="container mx-auto px-2 py-8">
+    <div className="container mx-auto px-2 pt-9 pb-3">
       <h1 className="text-2xl font-medium mb-6 text-left mx-2">Skills</h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {profileData.skills.map((skill, index) => (

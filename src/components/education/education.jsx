@@ -16,7 +16,7 @@ const Education = ({ profileData }) => {
       {profileData.education.map((education, index) => (
         <div key={index} className=" p-2 mb-4 flex flex-col md:flex-row">
           <div className=" mb-4 md:mb-0">
-            <h3 className="text-xl font-medium">{education.degree}</h3>
+            <h3 className="text-l font-medium">{education.degree}</h3>
             <p className="text-gray-500 mb-2">{education.school}</p>
             <p className="text-gray-500">
               {education.start_date} to {education.end_date}

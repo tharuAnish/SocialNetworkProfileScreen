@@ -10,7 +10,7 @@ export default function Experience({ profileData }) {
 
   return (
     <div className="max-w-3xl p-2 mx-auto bg-white border rounded-lg overflow-hidden">
-      <h1 className="text-2xl font-medium mx-3 mt-3">Work Experience</h1>
+      <h1 className="text-2xl font-medium mx-3 mb-4 mt-3">Work Experience</h1>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
         {profileData.experience.map((exp, index) => (
           <div
