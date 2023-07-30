@@ -20,7 +20,7 @@ const CertificationCard = ({ profileData }) => {
   }
 
   return (
-    <div className=" p-2 mx-auto bg-white border rounded-lg overflow-hidden">
+    <div className=" p-2 mt-3 mx-auto bg-white border rounded-lg overflow-hidden">
       <h1 className="text-2xl font-medium mx-3 mb-4 mt-3">Certifications</h1>
       <div className=" ">
         {profileData.certifications.map((certification, index) => (
@@ -28,7 +28,7 @@ const CertificationCard = ({ profileData }) => {
             key={index}
             className="bg-white rounded-lg shadow-md p-6 border m-2"
           >
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-gray-700 text-xl font-medium mb-2">
               {certification.title}
             </h2>
             <p className="text-gray-600 mb-2">{certification.authority}</p>

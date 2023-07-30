@@ -16,7 +16,7 @@ const Skills = ({ profileData }) => {
         {profileData.skills.map((skill, index) => (
           <div
             key={index}
-            className="bg-white shadow-sm rounded-lg p-4 flex items-center justify-center h-20 transition-transform transform hover:-translate-y-1 hover:shadow-md border border-gray-200 transition-all ease-in-out duration-300"
+            className="bg-white shadow-sm rounded-full text-center px-4 py-1 flex items-center justify-center h-16 transition-transform transform hover:-translate-y-1 hover:shadow-md border border-gray-200 transition-all ease-in-out duration-300"
           >
             <span className="text-m font-small text-gray-600">{skill}</span>
           </div>
