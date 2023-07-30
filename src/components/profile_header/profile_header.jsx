@@ -26,12 +26,6 @@ export default function ProfileHeader({ profileData }) {
           A passionate software engineer with expertise in web development...
         </p>
       </div>
-
-      {/* Contact Information */}
-      {/* <div className="px-4 py-2 border-t border-gray-200">
-        <p className="text-gray-600">{profileData.email}</p>
-        <p className="text-gray-600">{profileData.phone_number}</p>
-      </div> */}
     </div>
   )
 }
