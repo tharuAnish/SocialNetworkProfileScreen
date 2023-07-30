@@ -1,7 +1,6 @@
 import React from "react"
-import Profile from "../../../src/assets/images/profile.jpg"
-import Background from "../../../src/assets/images/background.jpeg"
-import { AiOutlineLike } from "react-icons/ai"
+import Profile from "../../../src/assets/images/profile.webp"
+import Background from "../../../src/assets/images/background.webp"
 
 export default function ProfileHeader({ profileData }) {
   return (
