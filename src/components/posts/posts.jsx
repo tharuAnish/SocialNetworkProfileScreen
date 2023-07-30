@@ -24,7 +24,7 @@ const Posts = ({ profileData }) => {
       <h1 className="text-2xl font-medium mb-6 text-left mx-4 text-gray-800">
         Posts
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {profileData.posts.map((post) => (
           <div
             key={post.post_id}
