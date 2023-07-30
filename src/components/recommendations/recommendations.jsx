@@ -11,14 +11,16 @@ const Recommendations = ({ profileData }) => {
 
   return (
     <div className="container mx-auto px-4 pt-4 border my-6 rounded-lg bg-white">
-      <h1 className="text-2xl font-medium mb-4 text-left">Recommendations</h1>
+      <h1 className="text-2xl font-medium mb-4 text-left text-gray-800">
+        Recommendations
+      </h1>
       <div className="">
         {profileData.recommendations.map((recommendation, index) => (
           <div
             key={index}
             className="bg-white shadow-sm rounded-lg p-4 border my-4"
           >
-            <h2 className="text-xl font-semibold mb-2">
+            <h2 className="text-lg text-gray-700 font-semibold ">
               {recommendation.name}
             </h2>
             <p className="text-gray-600 mb-1">{recommendation.relationship}</p>

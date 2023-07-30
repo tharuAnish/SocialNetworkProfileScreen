@@ -11,12 +11,14 @@ const Education = ({ profileData }) => {
   }
 
   return (
-    <div className="container mx-auto px-4 py-4 bg-white border rounded-lg">
+    <div className="container mx-auto px-4 p-4 bg-white border rounded-lg text-gray-800">
       <h1 className="text-2xl font-medium mb-4">Education</h1>
       {profileData.education.map((education, index) => (
-        <div key={index} className=" p-2 mb-4 flex flex-col md:flex-row">
-          <div className=" mb-4 md:mb-0">
-            <h3 className="text-l font-medium">{education.degree}</h3>
+        <div key={index} className=" p-2  flex flex-col md:flex-row">
+          <div className=" ">
+            <h3 className="text-lg text-gray-700 font-medium">
+              {education.degree}
+            </h3>
             <p className="text-gray-500 mb-2">{education.school}</p>
             <p className="text-gray-500">
               {education.start_date} to {education.end_date}

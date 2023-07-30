@@ -21,7 +21,9 @@ const CertificationCard = ({ profileData }) => {
 
   return (
     <div className=" p-2 mt-3 mx-auto bg-white border rounded-lg overflow-hidden">
-      <h1 className="text-2xl font-medium mx-3 mb-4 mt-3">Certifications</h1>
+      <h1 className="text-2xl font-medium mx-3 mb-4 mt-3 text-gray-800">
+        Certifications
+      </h1>
       <div className=" ">
         {profileData.certifications.map((certification, index) => (
           <div

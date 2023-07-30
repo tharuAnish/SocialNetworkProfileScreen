@@ -9,15 +9,17 @@ export default function Experience({ profileData }) {
   }
 
   return (
-    <div className="max-w-3xl p-2 mx-auto bg-white border rounded-lg overflow-hidden">
-      <h1 className="text-2xl font-medium mx-3 mb-4 mt-3">Work Experience</h1>
+    <div className="max-w-3xl p-2 mx-auto bg-white border rounded-lg overflow-hidden ">
+      <h1 className="text-2xl font-medium mx-3 mb-4 mt-3 text-gray-800">
+        Work Experience
+      </h1>
       <div className=" grid grid-cols-1 md:grid-cols-2 gap-4">
         {profileData.experience.map((exp, index) => (
           <div
             key={index}
             className="bg-white shadow-md border rounded-lg p-4 mx-2 my-2"
           >
-            <h3 className="text-l font-semibold">{exp.title}</h3>
+            <h3 className="text-lg text-gray-700 font-semibold">{exp.title}</h3>
             <p className="text-gray-500 mb-2">
               {exp.company} - {exp.location}
             </p>

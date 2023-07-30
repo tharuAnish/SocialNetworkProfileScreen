@@ -7,6 +7,7 @@ import Skills from "../../components/skills/skills"
 import Recommendations from "../../components/recommendations/recommendations"
 import Posts from "../../components/posts/posts"
 import CertificationCard from "../../components/certifications/certifications"
+import Loading from "../../components/loading/loading"
 
 export default function Profile() {
   const {
@@ -18,7 +19,11 @@ export default function Profile() {
   return (
     <div className="max-w-3xl mx-auto  overflow-hidden">
       {error && <div>{error}</div>}
-      {isPending && <div>Loading...</div>}
+      {isPending && (
+        <div>
+          <Loading />
+        </div>
+      )}
       {profileData && (
         <div className="container mx-auto p-4">
           <ProfileHeader profileData={profileData} />

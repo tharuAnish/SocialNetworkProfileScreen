@@ -11,14 +11,16 @@ const Skills = ({ profileData }) => {
 
   return (
     <div className="container mx-auto px-2 pt-9 pb-3">
-      <h1 className="text-2xl font-medium mb-6 text-left mx-2">Skills</h1>
+      <h1 className="text-2xl font-medium mb-6 text-left mx-2 text-gray-800">
+        Skills
+      </h1>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {profileData.skills.map((skill, index) => (
           <div
             key={index}
             className="bg-white shadow-sm rounded-full text-center px-4 py-1 flex items-center justify-center h-16 transition-transform transform hover:-translate-y-1 hover:shadow-md border border-gray-200 transition-all ease-in-out duration-300"
           >
-            <span className="text-m font-small text-gray-600">{skill}</span>
+            <span className="text-m font-small text-gray-700">{skill}</span>
           </div>
         ))}
       </div>

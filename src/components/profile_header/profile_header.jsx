@@ -18,12 +18,12 @@ export default function ProfileHeader({ profileData }) {
         />
       </div>
       {/* Summary */}
-      <div className="px-6 pb-6 ">
-        <h2 className="text-2xl font-bold">{profileData.name}</h2>
-        <p className="text-gray-500"> {profileData.connections} Connections</p>
+      <div className="px-5 pb-5 ">
+        <h2 className="text-2xl font-bold text-gray-800">{profileData.name}</h2>
+        <p className="text-gray-500"> {profileData.connections}+ Connections</p>
         <span className="text-gray-500">{profileData.headline} | </span>
         <span className="text-gray-500">{profileData.location}</span>
-        <p className="text-gray-600">
+        <p className="text-gray-600 text-lg">
           A passionate software engineer with expertise in web development...
         </p>
       </div>

@@ -21,7 +21,9 @@ const Posts = ({ profileData }) => {
 
   return (
     <div className="container mx-auto  py-4">
-      <h1 className="text-2xl font-medium mb-6 text-left mx-4">Posts</h1>
+      <h1 className="text-2xl font-medium mb-6 text-left mx-4 text-gray-800">
+        Posts
+      </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {profileData.posts.map((post) => (
           <div
