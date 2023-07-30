@@ -7,6 +7,7 @@ export default function ProfileHeader({ profileData }) {
     <div className="max-w-3xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden">
       {/* Cover Image */}
       <img src={Background} alt="Cover" className="w-full h-32 object-cover" />
+      <hello></hello>
 
       <div className="flex justify-center -mt-12">
         {/* Profile Image */}
